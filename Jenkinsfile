@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout Source') {
             steps {
-                git branch: 'test', credentialsId: 'github-creds', url: 'https://github.com/rahul-trs/courses.git'
+                git branch: 'master', credentialsId: 'github-creds', url: 'https://github.com/SufiyaShabai/courses-test.git'
             }
         }
 
