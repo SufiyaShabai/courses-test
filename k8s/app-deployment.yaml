@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: courses-code
+  name: courses-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: courses-code
+      app: courses-test
   template:
     metadata:
       labels:
-        app: courses-code
+        app: courses-test
     spec:
       containers:
-        - name: courses-code
-          image: rahul9198/courses-code:IMAGE_TAG
+        - name: courses-test
+          image: sufiyashabai/courses-test:IMAGE_TAG
           ports:
             - containerPort: 8080
           env:
