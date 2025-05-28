@@ -11,7 +11,7 @@ pipeline {
         FULL_IMAGE = "sufiyashabai/courses-test:${BUILD_NUMBER}"
         AWS_CREDENTIALS = credentials('aws-creds')  // Jenkins AWS credentials ID
         AWS_REGION = 'us-east-1'                    // your EKS region
-        EKS_CLUSTER_NAME = 'springboot-jenkins'        // your EKS cluster name
+        EKS_CLUSTER_NAME = 'springboot-jenkins-1'        // your EKS cluster name
     }
 
     stages {
